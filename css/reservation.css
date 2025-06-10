@@ -1,0 +1,125 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+body {
+    margin: 0;
+    padding-top: 64px;
+    background-color: #f5f5f5;
+}
+
+.offers {
+    background-color: #d7ccc8 !important;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.hero {
+    margin-top: -64px;
+}
+
+/* Naprawa kart */
+.card.transparent {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.card-content.transparent {
+    background: transparent !important;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hero {
+    position: relative;
+    height: 40vh;
+    background: url('../kontakt.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 0;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 33, 33, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contact-info {
+    background-color: #B09C9C;
+    padding: 3rem 0;
+    color: #212121;
+}
+
+.footer-custom {
+    padding-top: 2rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #212121;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    gap: 0.5rem;
+}
+.people-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.people-selector .btn {
+    flex: 1;
+}
+.people-selector .btn.active {
+    background-color: #8D6E63 !important;
+}
+.treatment-selector {
+    margin-bottom: 20px;
+}

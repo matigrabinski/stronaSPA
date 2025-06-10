@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Serentina Spa</title>
+    <!-- Materialize CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style>
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero {
+            position: relative;
+            height: 40vh;
+            background: url('kontakt.jpg') no-repeat center center;
+            background-size: cover;
+            padding-top: 0;
+        }
+
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(33, 33, 33, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            color: #fff;
+            font-size: 3rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .contact-info {
+            padding: 3rem 0;
+            color: #212121;
+        }
+
+        .footer-custom {
+            padding-top: 2rem;
+        }
+
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .btn-custom {
+            background-color: #8D6E63;
+        }
+
+        .btn-custom:hover {
+            background-color: #A1887F;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav class="transparent z-depth-0">
+    <div class="nav-wrapper container right">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" class="white-text">Strona główna</a></li>
+            <li><a href="blog.html" class="white-text">Blog</a></li>
+            <li><a href="kontakt.html" class="white-text">Kontakt</a></li>
+            <li><a href="o_nas.html" class="white-text">O nas</a></li>
+            <li><a href="cennik.html" class="white-text">Cennik</a></li>
+            <li><a href="rezerwacja.html" class="btn-flat white-text waves-effect waves-light"
+                   style="border: 1px solid #fff;">Zarezerwuj</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="overlay">
+        <h1>Serentina Spa</h1>
+    </div>
+</section>
+
+<section class="contact-info brown lighten-2">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h5>Adres:</h5>
+                <p>Serenita Spa, Aleja Politechniki 3/21, 91-126 Łódź</p>
+                <h5>Telefon:</h5>
+                <p>xxx–xxx–xxx</p>
+                <h5>E-mail:</h5>
+                <p><a href="mailto:serenita.spa.kontakt@gmail.com" class="black-text">serenita.spa.kontakt@gmail.com</a></p>
+            </div>
+            <div class="col s12 m6">
+                <div class="contact-form">
+                    <h5>Wyślij wiadomość</h5>
+                    <form action="#" method="POST" id="contact_form">
+                        <div class="input-field">
+                            <input id="name" type="text" class="validate" required>
+                            <label for="name">Imię i nazwisko</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="subject" type="text" class="validate" required>
+                            <label for="subject">Temat</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea" required></textarea>
+                            <label for="message">Wiadomość</label>
+                        </div>
+                        <button class="btn waves-effect waves-light btn-custom" type="submit" name="action">
+                            Wyślij
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="white">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h5>Skontaktuj się z nami</h5>
+                <div class="valign-wrapper">
+                    <i class="material-icons">access_time</i>
+                    <span style="margin-left: 10px;">
+                        Godziny otwarcia:<br>
+                        Poniedziałek-Piątek: 9:00-17:00<br>
+                        Sobota: 10:30-18:30
+                    </span>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <h5>Obserwuj nas</h5>
+                <div class="social-links">
+                    <div class="valign-wrapper">
+                        <i class="material-icons">facebook</i>
+                        <a href="#" class="black-text" style="margin-left: 10px;">Facebook</a>
+                    </div>
+                    <div class="valign-wrapper">
+                        <i class="material-icons">photo_camera</i>
+                        <a href="#" class="black-text" style="margin-left: 10px;">Instagram</a>
+                    </div>
+                    <div class="valign-wrapper">
+                        <i class="material-icons">play_circle_filled</i>
+                        <a href="#" class="black-text" style="margin-left: 10px;">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <p>&copy; 2025 Serenita Spa. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Materialize JS -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>

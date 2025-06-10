@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Serenita SPA</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style>
+        .uslugi img {
+            margin: 10px;
+        }
+        .social-icon {
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            color: #333;
+        }
+        .left-content {
+            text-align: left;
+        }
+        .blog-section, .reservation-section, .testimonials-section {
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+        }
+        .blog-image, .reservation-image, .testimonials-image {
+            flex: 1;
+            padding: 20px;
+        }
+        .blog-content, .reservation-content, .testimonials-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .testimonial-card {
+            background-color: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .client-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .blog-section, .reservation-section, .testimonials-section {
+                flex-direction: column;
+            }
+        }
+        .testimonials-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .testimonial-card {
+            background-color: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px auto;
+            max-width: 600px;
+            color: #333;
+            text-align: left;
+        }
+        .client-name {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #5d4037;
+        }
+    </style>
+</head>
+<body>
+<div class="brown lighten-2">
+    <nav class="brown lighten-2 navbar-fixed" role="navigation">
+        <div class="nav-wrapper">
+            <ul class="right">
+                <li><a href="#" class="black-text">Strona główna</a></li>
+                <li><a href="blog.html" class="black-text">Blog</a></li>
+                <li><a href="kontakt.html" class="black-text">Kontakt</a></li>
+                <li><a href="o_nas.html" class="black-text">O nas</a></li>
+                <li><a href="cennik.html" class="black-text">Cennik</a></li>
+                <li><a class="btn black darken-2" href="rezerwacja.html">Zarezerwuj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container left-content" style="padding: 80px 0;">
+        <h1><b>Witaj w Serenita Spa</b></h1>
+        <h4><b>Odpocznij, zregeneruj się i poczuj harmonię</b></h4>
+        <p>
+            Nasze spa to miejsce, które zapewni Ci pełen relaks i regenerację.
+            Niezależnie od tego, czy jesteś
+            zapracowaną profesjonalistką, mamą, która potrzebuje chwili dla siebie,
+            czy przedsiębiorczynią
+            szukającą odprężenia – nasze usługi są stworzone z myślą o Tobie.
+            Oferujemy szeroką gamę
+            zabiegów, które pozwolą Ci odzyskać równowagę i energię
+        </p>
+    </div>
+
+    <div class="container">
+        <img src="landing-page-main.png" alt="landing page" class="responsive-img">
+    </div>
+
+    <!-- Nasze Usługi Section -->
+    <div class="container" style="padding: 40px 0;">
+        <h2 class="center-align"><b>Nasze usługi</b></h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <img src="zabiegi_relaksacyjne.png" alt="zabiegi relaksacyjne" class="responsive-img">
+                <h5>Zabiegi relaksacyjne</h5>
+                <p>Masaż klasyczny, gorącymi kamieniami, aromaterapia.</p>
+            </div>
+            <div class="col s12 m4">
+                <img src="pielegnacja-skory.png" alt="pielegnacja skory" class="responsive-img">
+                <h5>Pielęgnacja skóry</h5>
+                <p>Zabiegi na twarz i ciało, oczyszczanie, nawilżenie.</p>
+            </div>
+            <div class="col s12 m4">
+                <img src="pakiety-dla-kazdego.png" alt="pakiety dla kazdego" class="responsive-img">
+                <h5>Pakiety dla każdego</h5>
+                <p>Pakiety dla zapracowanych profesjonalistek.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="blog-section brown lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 blog-image">
+                    <img src="blog.png" alt="Blog Serenita Spa" class="responsive-img">
+                </div>
+                <div class="col s12 m6 blog-content left-content">
+                    <h2>Blog</h2>
+                    <p>
+                        Wskazówki i porady na blogu<br>
+                        Chcesz wiedzieć, jak zadbać o siebie<br>
+                        w zabieganym życiu? Odwiedź nasz blog,<br>
+                        gdzie znajdziesz porady na temat pielęgnacji,<br>
+                        relaksu i dobrego samopoczucia.
+                    </p>
+                    <a class="btn black darken-2" href="blog.html">CZYTAJ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rezerwacja Section -->
+    <div class="reservation-section brown lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 reservation-content left-content">
+                    <h4>Zarezerwuj swój zabieg</h4>
+                    <p>
+                        Zarezerwuj zabieg online w prosty sposób. Wybierz dogodny termin, zapisz się na wybrany zabieg,
+                        a my zatroszczymy się o resztę. W razie potrzeby możesz skontaktować się z nami bezpośrednio.
+                    </p>
+                    <a class="btn black darken-2" href="rezerwacja.html">ZAREZERWUJ</a>
+                </div>
+                <div class="col s12 m6 reservation-image">
+                    <img src="zarezerwuj-zabieg.png" alt="Rezerwacja online" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section brown lighten-3">
+        <div class="container">
+            <h2>Opinie naszych zadowolonych klientów</h2>
+
+            <!-- Opinie jedna pod drugą -->
+            <div class="testimonials-content">
+                <div class="testimonial-card">
+                    <p>
+                        "Zawsze po wizycie w Serenita Spa czuję się odprężona i pełna energii.
+                        Rezerwacja online jest szybka, a zabiegi zawsze profesjonalne."
+                    </p>
+                    <div class="client-name">Kasia, 30 lat</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>
+                        "Dla mnie ważne jest, żeby miejsce było przyjazne i wygodne.
+                        Tutaj czuję się jak w domu. Idealne miejsce na chwilę relaksu."
+                    </p>
+                    <div class="client-name">Ania, 40 lat</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>
+                        "Profesjonalizm, elegancja i spokój – wszystko, czego potrzebuję,
+                        aby zregenerować się po intensywnych dniach pracy."
+                    </p>
+                    <div class="client-name">Magda, 38 lat</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="white">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h5>Skontaktuj się z nami</h5>
+                <div class="valign-wrapper">
+                    <i class="material-icons">access_time</i>
+                    <span style="margin-left: 10px;">
+            Godziny otwarcia:<br>
+            Poniedziałek-Piątek: 9:00-17:00<br>
+            Sobota: 10:30-18:30
+          </span>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <h5>Obserwuj nas</h5>
+                <div class="social-links">
+                    <div class="valign-wrapper">
+                        <i class="material-icons">facebook</i>
+                        <a href="#" class="black-text" style="margin-left: 10px;">Facebook</a>
+                    </div>
+                    <div class="valign-wrapper">
+                        <i class="material-icons">photo_camera</i>
+                        <a href="#" class="black-text" style="margin-left: 10px;">Instagram</a>
+                    </div>
+                    <div class="valign-wrapper">
+                        <i class="material-icons">play_circle_filled</i>
+                        <a href="#" class="black-text" style="margin-left: 10px;">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <p>&copy; 2025 Serenita Spa. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
