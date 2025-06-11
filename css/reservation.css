@@ -28,7 +28,6 @@ body {
     margin-top: -64px;
 }
 
-/* Naprawa kart */
 .card.transparent {
     background: transparent !important;
     box-shadow: none !important;
